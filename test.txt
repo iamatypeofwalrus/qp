@@ -1,3 +1,4 @@
-/test?format=xml
+/test?format=xml&derp=yup
 /test?format=who-dun-it
 /another/test?format=nah
+/another/test?derp=yup

@@ -1,5 +1,5 @@
 # Query Parse
-Parse Url query params from the command line
+Parse URL query params from the command line.
 
 ## Usage
 ```sh
@@ -15,3 +15,8 @@ echo /review/list?format=xml&v=2 | qp -param 'format,v'
 # /review/list	format=xml&v=2	xml
 echo /review/list?format=xml&v=2 | qp -param 'format' -verbose
 ```
+
+## Notes
+When multiple params are specified and at least one is found any empty param will be signified as ".".
+
+This allows to guarantee the position of the param regardless of the presence of other parameters based on the order entered in the -param option.
