@@ -20,7 +20,7 @@ echo /review/list?format=xml&v=2 | qp 'format,v'
 # 	$1    -> url
 #		$2    -> query string
 #		$3... -> values pulled out of query string
-echo /review/list?format=xml&v=2 | qp -param 'format, derp' -verbose
+echo /review/list?format=xml&v=2 | qp -v 'format, derp'
 # Prints:
 # /review/list	format=xml&v=2	xml NULL
 ```
