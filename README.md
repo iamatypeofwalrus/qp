@@ -26,8 +26,6 @@ echo /review/list?format=xml&v=2 | qp -v 'format, derp'
 ```
 
 ## Notes
-When multiple params are specified and at least one value in a given line is present then any null value will print the null string. By default that is NULL.
+When multiple params are specified and at least one value in a given line is present any null value will print the null string. By default that is NULL. This guarantees the position of the parameter value in the output, and it is really handing when using a stream editor like Awk.
 
 If all parameters are NULL or there is any error parsing the URL there will be no output for that line.
-
-This guarantees the position of the parameter value in the output. Output order is based on the input order.
