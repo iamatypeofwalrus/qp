@@ -1,5 +1,0 @@
-{
-  "build": "go install",
-  "test": "./build.sh",
-  "run": "echo Installed and built binaries!"
-}
